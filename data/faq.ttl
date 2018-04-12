@@ -1,0 +1,5 @@
+@prefix s: <http://schema.org/> .
+
+<> a s:QAPage;
+  s:name "Train";
+.

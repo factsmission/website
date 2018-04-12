@@ -1,2 +1,1 @@
-# website
-Currently just for issues as the webiste is on wordpress
+Trying to make our website as rdf stuff
