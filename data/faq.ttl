@@ -1,5 +1,48 @@
-@prefix s: <http://schema.org/> .
+@prefix s:<http://schema.org/> .
 
-<> a s:QAPage;
-  s:name "Train";
-.
+        <faq> a s:QAPage;
+            s:item [
+                a s:Question;
+                s:text "Where do I find Linked Data?";
+                s:acceptedAnswer [
+                    a s:Answer;
+                    s:text "Several government agencies have started providing data as Linked Data. <a href='dbpedia.org'>DBpedia.org</a> exposes the contents of Wikipedia as Linked Data. <a href='wikidata.org'>Wikidata.org</a> is a free and open knowledge base that can be read and edited by both humans and machines, Wikidata exposes all its data as Linked Data and allows querying with SPARQL.";
+                ];
+            ];
+        
+            s:item [
+                a s:Question;
+                s:text "How does your technology distinguish facts from lies?";
+                s:acceptedAnswer [
+                    a s:Answer;
+                    s:text "Well it doesn’t. Linked Data technology can give you better means to decide whether to accept a claim as fact or not by linking it to supportive evidence or rebuttals. By making assertions more precise they are the better object of scrutiny, by linking them to a network of knowledge one can see what acceptance of a claim implies.";
+                ];
+            ];
+        
+            s:item [
+                a s:Question;
+                s:text "What’s the difference between Linked Data and traditional Web Sites?";
+                s:acceptedAnswer [
+                    a s:Answer;
+                    s:text "The traditional Web is document oriented. Only documents can be interlinked using traditional Web technologies. Linked Data allows the exposure of individual pieces of information, which can then be interlinked. For example, a weather forecast site on the traditional web only contains human-readable text and information about how it should be displayed. With linked data it could also contain the machine-readable information that a specified value is the expected temperature, at a specified date, in specified place. The site might link to a geographic authority to allow users and applications to access more information about the place. By having machine readable data, applications can do more for us. For example, combining data from a weather site and a transport site, an application could give us a list of places that are sunny tomorrow and that we can reach by train in less than an hour.";
+                ];
+            ];
+        
+            s:item [
+                a s:Question;
+                s:text "Why would public agencies publish Linked Data?";
+                s:acceptedAnswer [
+                    a s:Answer;
+                    s:text "By publishing Linked Data, governmental organisations can reduce cost, maximize the impact and also help immunizing the public against fake news. It reduces costs as less freedom of information requests have to be answered and because it reduces the need to maintain specific applications that give access to their data. With the data openly available as Linked Data proprietary interfaces to the data become obsolete, application developers can build applications that directly access the data. The data can be used as reference in other linked data such as on Wikipedia maximizing the visibility and the impact of the data. Journalist can reference to the governmental data helping to distinguish facts from fake news and also showing the relevance of the work and data of the publishing agency.";
+                ];
+            ];
+        
+            s:item [
+                a s:Question;
+                s:text "What benefits do libraries have from publishing Linked Data?";
+                s:acceptedAnswer [
+                    a s:Answer;
+                    s:text "A crucial purpose of libraries and their catalogs is to make their bibliographic items findable. Unlike a traditional library catalog, one published as Linked Data will also allow searching using information from other sources. For example, one could search for all books published by authors born in a certain town, even if the library catalog does not itself contain the place of birth of the authors. Such a query would also access data from another source such as Wikidata. <br>Another advantage is that bibliographies can directly reference to the item available in the library.";
+                ];
+            ];
+        .
