@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="render" resource="faq" context="http://rdf2h.github.io/2016/generic-rdf2h-Renderers/FullPage">
+<html class="render" resource="" context="http://rdf2h.github.io/2016/generic-rdf2h-Renderers/FullPage">
     <meta charset="UTF-8">
     <title>FactsMission</title>
     <meta name="viewport" content="initial-scale=1.0">
@@ -7,10 +7,23 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://rdf2h.github.io/ld2h/latest/ld2h.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>  
+
     <script id="data" type="text/turtle">
         @prefix s:<http://schema.org/> .
 
-        <faq> a s:QAPage;
+        <> 
+            a s:QAPage;
+            a s:WebPage;
+            
+            s:name "FAQ";
+            s:headline "Frequently Asked Questions";
+
+            s:copyrightYear 2018;
+            s:copyrightHolder "FactsMission";
+
             s:item [
                 a s:Question;
                 s:text "Where do I find Linked Data?";

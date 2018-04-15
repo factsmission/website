@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="render" resource="" context="http://rdf2h.github.io/2016/generic-rdf2h-Renderers/FullPage">
+    <meta charset="UTF-8">
+    <title>FactsMission</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="renderers" href="renderers.ttl" type="text/turtle" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://rdf2h.github.io/ld2h/latest/ld2h.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>  
+
+    <script id="data" type="text/turtle">
+        @prefix s:<http://schema.org/> .
+
+        <> 
+            a s:WebPage;
+            
+            s:name "Essentials";
+            s:headline "Essentials";
+
+            s:copyrightYear 2018;
+            s:copyrightHolder "FactsMission";
+
+            s:mainContentOfPage [
+                a s:Article;
+                s:text "Linked Data technologies are the foundations of the Semantic Web also known as Web 3.0. The documented-oriented traditional web was thought by its inventor as the first stage, the next web shall make knowledge much more directly accessible to both humans and machines. Data becomes interoperable and actionable. With linked data the web can directly answer complex questions using data from disparate sources.<hr>An example please?<br>Say you love jazz, are very sensitive to ozone and want to move to Switzerland despite your limited budget. Which town is best for you? All relevant data is available on the web, but only with linked data and its query language SPARQL you can make a single query that is answered using data from the federal office of the environment for the ozone levels, from the statistical office for the housing pricing and from Time Out magazine for the jazz events. And the best of it: thanks to the W3C web standards the different sources do not need to care about connecting to each other or even know each other, they can be used in concert simply because they all publish adhering to standards and best practices.<hr>The following introduces some key concepts and technologies for Linked Data.";
+            ];
+
+
+        .
+    </script>
+    <script src="index.js"></script>
+</html>

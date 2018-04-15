@@ -5,22 +5,71 @@
 @prefix s: <http://schema.org/> .
 @prefix gt: <http://rdf2h.github.io/2016/generic-rdf2h-Renderers/> .
 
-<QAPage> a r2h:Renderer;
-    r2h:type s:QAPage;
+<Frame> a r2h:Renderer;
+    r2h:type rdfs:Resource;
     r2h:context gt:HtmlBody;
     r2h:mustache """
-      {{{@prefix s: <http://schema.org/>}}}
-      {{{@prefix r2h: <http://rdf2h.github.io/2015/rdf2h#>}}}
-      <div class="body">
-        <h1>
-            Frequently Asked Questions
-        </h1>
-        <div class="content">
-        {{#s:item}}
+    {{{@prefix s: <http://schema.org/>}}}
+    {{{@prefix r2h: <http://rdf2h.github.io/2015/rdf2h#>}}}
+
+    {{{:render . r2h:Default}}}
+
+    <div class="uk-text-meta">
+        <p>
+            <hr class="uk-divider-icon">
+            +41 58 255 19 99
+            <br>
+            info@factsmission.com
+            <hr>
+            &copy; {{s:copyrightYear}} {{s:copyrightHolder}} All rights reserved.
+            <br>
+            {{s:copyrightHolder}}, Karl-Neuhaus-strasse 40, 2502 Biel/Bienne, Switzerland
+        </p>
+    </div>
+    """
+.
+
+<Page> a r2h:Renderer;
+    r2h:type s:WebPage;
+    r2h:context r2h:Default;
+    r2h:mustache """
+    {{{@prefix s: <http://schema.org/>}}}
+    {{{@prefix r2h: <http://rdf2h.github.io/2015/rdf2h#>}}}
+    <h1>
+        {{s:headline}}
+    </h1>
+    
+    {{#s:mainContentOfPage}}
+        <div class="uk-card uk-background-muted uk-margin">
             {{{:render . r2h:Default}}}
-        {{/s:item}}
         </div>
-      </div>
+    {{/s:mainContentOfPage}}
+
+    {{#s:item}}
+        <div class="uk-card uk-card-hover uk-card-default uk-margin">
+            {{{:render . r2h:Default}}}
+        </div>
+    {{/s:item}}
+    """
+.
+
+<article> a r2h:Renderer;
+    r2h:type s:Article;
+    r2h:context r2h:Default;
+    r2h:mustache """
+    {{{@prefix s: <http://schema.org/>}}}
+    {{#+s:headline}}
+    <div class="uk-card-header">
+        <h3 class="uk-card-title">
+            {{{s:headline}}}
+        </h3>
+    </div>
+    {{/+s:headline}}
+    <div class="uk-card-body">
+        <p>
+            {{{s:text}}}
+        </p>
+    </div>
     """
 .
 
@@ -28,17 +77,19 @@
     r2h:type s:Question;
     r2h:context r2h:Default;
     r2h:mustache """
-      {{{@prefix s: <http://schema.org/>}}}
-      <div class="question">
-        <h2>
+    {{{@prefix s: <http://schema.org/>}}}
+    <div class="uk-card-header">
+        <h3 class="uk-card-title">
             {{s:text}}
-        </h2>
+        </h3>
+    </div>
+    <div class="uk-card-body">
         <p>
-        {{#s:acceptedAnswer}}
-            {{{s:text}}}
-        {{/s:acceptedAnswer}}
+            {{#s:acceptedAnswer}}
+                {{{s:text}}}
+            {{/s:acceptedAnswer}}
         </p>
-      </div>
+    </div>
     """
 .
 
@@ -46,15 +97,29 @@
     r2h:type rdfs:Resource;
     r2h:context gt:FullPage;
     r2h:mustache """
+    {{{@prefix s: <http://schema.org/>}}}
     {{{@prefix r2h: <http://rdf2h.github.io/2015/rdf2h#>}}}
     {{{@prefix gt: <http://rdf2h.github.io/2016/generic-rdf2h-Renderers/>}}}
     <head>
-        <title>{{.}}</title>
+        <title>FactsMission</title>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700,700i|Noto+Serif:400,400i" rel="stylesheet">
-        <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
     </head>
     <body>
-        {{{:render . gt:HtmlBody}}}
+
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="essentials.html">Essentials</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="uk-container">
+            {{{:render . gt:HtmlBody}}}
+        </div>
     </body>
     """
 .
