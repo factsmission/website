@@ -42,7 +42,6 @@
     </div>
     
     {{#s:mainContentOfPage}}
-        <hr>
         <div class='uk-card uk-card-default uk-margin'>
             {{{:render . r2h:Default}}}
         </div>
