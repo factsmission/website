@@ -131,9 +131,9 @@
             </div>
             <div class='uk-navbar-right'>
                 <ul class='uk-navbar-nav'>
-                    <li><a href='essentials.html'>Essentials</a></li>
-                    <li><a href='faq.html'>FAQ</a></li>
-                    <li><a href='team.html'>Team</a></li>
+                    <li><a href='essentials'>Essentials</a></li>
+                    <li><a href='faq'>FAQ</a></li>
+                    <li><a href='team'>Team</a></li>
                 </ul>
             </div>
         </nav>

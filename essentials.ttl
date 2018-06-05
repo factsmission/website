@@ -1,0 +1,74 @@
+@prefix s:<http://schema.org/> .
+
+<> 
+    a s:WebPage;
+    a s:HowTo;
+    
+    s:name "Essentials";
+    s:headline "Essentials";
+
+    s:copyrightYear 2018;
+    s:copyrightHolder "FactsMission";
+
+    s:mainContentOfPage [
+        a s:Article;
+        s:text "Linked Data technologies are the foundations of the Semantic Web also known as Web 3.0. The documented-oriented traditional web was thought by its inventor as the first stage, the next web shall make knowledge much more directly accessible to both humans and machines. Data becomes interoperable and actionable. With linked data the web can directly answer complex questions using data from disparate sources.<hr>An example please?<br>Say you love jazz, are very sensitive to ozone and want to move to Switzerland despite your limited budget. Which town is best for you? All relevant data is available on the web, but only with linked data and its query language SPARQL you can make a single query that is answered using data from the federal office of the environment for the ozone levels, from the statistical office for the housing pricing and from Time Out magazine for the jazz events. And the best of it: thanks to the W3C web standards the different sources do not need to care about connecting to each other or even know each other, they can be used in concert simply because they all publish adhering to standards and best practices.<hr>The following introduces some key concepts and technologies for Linked Data.";
+    ];
+
+    s:item [
+        a s:Article;
+        s:headline "Linked Data";
+        s:text "Data published on the web that can be connected to other data by using the standard →RDF data model and HTTP URIs. Ideally the data is published following the →Data on the Web Best Practices.";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Triple";
+        s:text "The most basic unit in RDF data. A triple is an edge when viewing RDF data as a graph. A triple can also be seen as a simple subject-predicate-object statement.";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Open Data";
+        s:text "Data are made available to the public to be freely used, re- used and redistributed. An increasing number of governments around the world have adopted and implemented policies promoting the publication of Open Data. Open Government Data goes beyond freedom of information laws because the data is electronically made available by government agencies and not only handed out on request. In Switzerland, the Federal Council approved the Open Government Data Strategy for Switzerland in April 2014.<br>Further information:<br><a href='http://opendatahandbook.org/guide/en/what-is-open-data/'>Open Data Handbook</a>";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Linked Open Data";
+        s:text "Linked Open Data is Open Data made available using Linked Data technologies. While Open Data is often just some files (typically PDFs or Excel files) available for download Linked Open Data allows directly querying datasets using the standardized query language SPARQL. Moreover, Linked Open Data also allows to directly link individual data items, this is an essential feature to make claims verifiable and thus, promote facts.";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "RDF";
+        s:text "The Resource Description Format (RDF) is a data model that shapes data as graphs. Data items can be connected to abstract concepts, as well as, to real world entities. The RDF model is more flexible than the relational database model (RDBMS): it doesn’t require a fixed, tabular structure of the data and it allows relations not only between tables, but between arbitrary data items.";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Triple Store";
+        s:text "A database specialized for storing and querying RDF graphs. Triple Stores are available by several vendors both as open source as well as commercial products. Popular triple stores:<ul><li>Stardog</li><li>Fuseki</li><li>Virtuoso</li><li>BlazeGraph</li><li>Oracle Spatial and Graph</li></ul>";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Semantic Web";
+        s:text "The web of →Linked Data. The Semantic Web is also known as Web 3.0 and extends the classic Web by allowing links not only between pages but between arbitrary data items. Semantic Web Technologies refers to the set of technologies including the standards →RDF, RDFS and OWL that allow to express the meaning of data to electronic agents.";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "SPARQL";
+        s:text "SPARQL is the standardized query language created by the W3C used for RDF data.";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Ontology";
+        s:text "In the context of Linked Data, the term ontology refers to a controlled vocabulary of classes and properties used to describe and to allow inference on data.";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Wikidata";
+        s:text "Wikidata is a collaboratively edited knowledge base operated by the Wikimedia Foundation. It is meant to provide a common source of data which can be used by Wikimedia projects such as Wikipedia and by anyone else, under a public domain license.";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Data on the Web best practices";
+        s:text "A W3C recommendation about how to publish data on the web in order for it to be discoverable and understandable by both humans and machines.";
+    ];
+
+.
