@@ -23,7 +23,7 @@
             <hr>
             &copy; {{s:copyrightYear}} {{s:copyrightHolder}} All rights reserved.
             <br>
-            {{s:copyrightHolder}}, Karl-Neuhaus-strasse 40, 2502 Biel/Bienne, Switzerland
+            {{s:copyrightHolder}}, Erlacherweg 6, 2503 Biel/Bienne, Switzerland
         </p>
     </div>
     """
