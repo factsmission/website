@@ -1,0 +1,9 @@
+@prefix s:<http://schema.org/> .
+
+        <> 
+            a s:WebPage;
+
+            s:copyrightYear 2018;
+            s:copyrightHolder "FactsMission";
+
+        .

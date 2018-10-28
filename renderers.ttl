@@ -17,11 +17,12 @@
     <div class='uk-card uk-card-body uk-text-meta'>
         <p>
             <hr class='uk-divider-icon'>
+            <a href='https://w3.org'><img class='uk-align-right' width='130px' src='img/w3.svg'></img></a>
             +41 58 255 19 99
             <br>
             info@factsmission.com
-            <hr>
-            &copy; {{s:copyrightYear}} {{s:copyrightHolder}} All rights reserved.
+            </p><p>
+            &copy; {{s:copyrightYear}} {{s:copyrightHolder}}: All rights reserved.
             <br>
             {{s:copyrightHolder}}, Erlacherweg 6, 2503 Biel/Bienne, Switzerland
         </p>
@@ -35,21 +36,19 @@
     r2h:mustache """
     {{{@prefix s: <http://schema.org/>}}}
     {{{@prefix r2h: <http://rdf2h.github.io/2015/rdf2h#>}}}
-    <div class='uk-card uk-card-body uk-margin-medium-top'>
-        <h1>
-            {{s:headline}}
-        </h1>
-    </div>
-    
-    {{#s:mainContentOfPage}}
-        <div class='uk-card uk-card-default uk-margin'>
-            {{{:render . r2h:Default}}}
+
+    <div class='uk-card uk-card-default uk-margin uk-margin-medium-top'>
+        <div class='uk-card-header'>
+            <h1>
+                {{{s:headline}}}
+            </h1>
         </div>
-    {{/s:mainContentOfPage}}
+        {{{:render s:mainContentOfPage r2h:Default}}}
+    </div>
 
     <div class='uk-flex uk-child-width-1-2@m uk-flex-wrap uk-flex-top'>
         {{#s:item}}
-            <div class='uk-card uk-card-hover'>
+            <div class='uk-card'>
                 {{{:render . r2h:Default}}}
             </div>
         {{/s:item}}
@@ -64,8 +63,10 @@
     {{{@prefix s: <http://schema.org/>}}}
     {{#+s:headline}}
     <div class='uk-card-header'>
-        <h3 class='uk-card-title'>
-            {{{s:headline}}}
+        <h3 class='uk-heading-line'>
+            <span>
+                {{{s:headline}}}
+            </span>
         </h3>
     </div>
     {{/+s:headline}}
@@ -76,6 +77,22 @@
             {{/+s:image}}
             {{{s:text}}}
         </p>
+        {{#+s:citation}}
+            <p class="uk-text-meta">
+                <strong>Further Information:</strong>
+                {{#s:citation}}
+                    {{#+s:url}}
+                        <br>
+                        <a class="uk-link-muted" href='{{{s:url}}}'>
+                            {{s:text}}
+                            {{^+s:text}}
+                                {{{s:url}}}
+                            {{/+s:text}}
+                        </a>
+                    {{/+s:url}}
+                {{/s:citation}}
+            </p>
+        {{/+s:citation}}
     </div>
     """
 .
@@ -118,6 +135,10 @@
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,700i|Noto+Serif:400,400i' rel='stylesheet'>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css' />
         <style>
+            .uk-card-default {
+                border: 1px solid #e5e5e5;
+                box-shadow: none;
+            }
             .red {
                 background-color: #bf360c !important;
                 color: #fff !important;
@@ -127,13 +148,14 @@
     <body>
         <nav class='uk-navbar-container uk-light red' uk-navbar>
             <div class='uk-navbar-left uk-width-expand'>
-                <a href='/'><img style='max-height:80px' src='logo.svg'></img></a>
+                <a href='/'><img style='max-height:80px' src='img/logo.svg'></img></a>
             </div>
             <div class='uk-navbar-right'>
                 <ul class='uk-navbar-nav'>
                     <li><a href='essentials'>Essentials</a></li>
                     <li><a href='faq'>FAQ</a></li>
                     <li><a href='team'>Team</a></li>
+                    <li><a href='values'>Our Values</a></li>
                 </ul>
             </div>
         </nav>
