@@ -163,6 +163,13 @@
         <div class='uk-container'>
             {{{:render . gt:HtmlBody}}}
         </div>
+        <script>
+            document.querySelectorAll('a').forEach(a => {
+                if (a.href === window.location.href) {
+                    a.parentElement.classList.add('uk-active')
+                }
+            })
+        </script>
     </body>
     """
 .
