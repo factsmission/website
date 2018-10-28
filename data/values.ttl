@@ -1,0 +1,37 @@
+@prefix s:<http://schema.org/> .
+
+        <> 
+            a s:WebPage;
+            
+            s:name "Our Values";
+            s:headline "Our Values";
+
+            s:copyrightYear 2018;
+            s:copyrightHolder "FactsMission";
+            
+            s:mainContentOfPage [
+                a s:Article;
+                s:text "Without knowing the facts, we can’t make good decisions. Getting the facts right is crucial to survive and to succeed as an individual, as a company, and as a society. <hr> How can we know if we got our facts right? While we might never know with absolute certainty if a statement about a fact is true or false, technology can greatly help us in making good judgments about these. FactsMission will help organizations and individuals adopt and use these technologies to their best.";
+            ];
+            s:item [
+                a s:Article;
+                s:headline "Now is the time to act";
+                s:text "On one hand, it was never more necessary, on the other hand we never had better technologies to achieve it.<hr>The times when truth-relativism was a harmless academic gimmick or even an emancipating story of liberation are long gone. The idea that there is no truth is not only used by authoritarian regimes to dismiss the quest for objectivity as propaganda but is more and more corroding the foundation even of established democracies.<hr>The good news is, that we now have the technologies that turn the web into a huge decentralized database with cryptographically ascertained authorities and which allow to express statements about facts in a concise and verifiable manner.";
+            ];
+            s:item [
+                a s:Article;
+                s:headline "We are a Member of the World Wide Web Consortium";
+                s:text "FactsMission supports the W3C in making sure all people benefit from the Web. As a member of the W3C, FactsMission is involved in defining tomorrow’s standards to make the Web better.";
+                s:image </img/w3.svg>;
+                s:citation [
+                    s:url <http://w3.org> ;
+                    s:text "World Wide Web Consortium (W3C)";
+                ]
+            ];
+            s:item [
+                a s:Article;
+                s:headline "Principles";
+                s:text "As urged by the digital manifesto “<a href='https://www.researchgate.net/publication/303813069_Behavioural_Control_or_Digital_Democracy_-_A_Digital_Manifesto'>Behavioral Control or Digital Democracy?</a>” FactsMission adheres to the following fundamental principles<ol><li>To increasingly decentralize the function of information systems;</li><li>To support informational, self-determination and participation;</li><li>To improve transparency to achieve greater trust;</li><li>To reduce the distortion and pollution of information;</li><li>To enable user-controlled information filters;</li><li>To promote social and economic diversity;</li><li>To improve interoperability and collaborative opportunities;</li><li>To create digital assistants and coordination tools;</li><li>To support collective intelligence, and</li><li>To promote the responsibility of citizens in the digital world through “digital enlightenment”</li></ol>";
+            ];
+
+        .

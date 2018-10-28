@@ -1,24 +1,19 @@
 @prefix s:<http://schema.org/> .
-
 <> 
     a s:WebPage;
     a s:HowTo;
-    
     s:name "Essentials";
     s:headline "Essentials";
-
     s:copyrightYear 2018;
     s:copyrightHolder "FactsMission";
-
     s:mainContentOfPage [
         a s:Article;
         s:text "Linked Data technologies are the foundations of the Semantic Web also known as Web 3.0. The documented-oriented traditional web was thought by its inventor as the first stage, the next web shall make knowledge much more directly accessible to both humans and machines. Data becomes interoperable and actionable. With linked data the web can directly answer complex questions using data from disparate sources.<hr>An example please?<br>Say you love jazz, are very sensitive to ozone and want to move to Switzerland despite your limited budget. Which town is best for you? All relevant data is available on the web, but only with linked data and its query language SPARQL you can make a single query that is answered using data from the federal office of the environment for the ozone levels, from the statistical office for the housing pricing and from Time Out magazine for the jazz events. And the best of it: thanks to the W3C web standards the different sources do not need to care about connecting to each other or even know each other, they can be used in concert simply because they all publish adhering to standards and best practices.<hr>The following introduces some key concepts and technologies for Linked Data.";
     ];
-
     s:item [
         a s:Article;
         s:headline "Linked Data";
-        s:text "Data published on the web that can be connected to other data by using the standard →RDF data model and HTTP URIs. Ideally the data is published following the →Data on the Web Best Practices.";
+        s:text "Data published on the web that can be connected to other data by using the standard RDF data model and HTTP URIs. Ideally the data is published following the Data on the Web Best Practices.";
     ];
     s:item [
         a s:Article;
@@ -28,7 +23,19 @@
     s:item [
         a s:Article;
         s:headline "Open Data";
-        s:text "Data are made available to the public to be freely used, re- used and redistributed. An increasing number of governments around the world have adopted and implemented policies promoting the publication of Open Data. Open Government Data goes beyond freedom of information laws because the data is electronically made available by government agencies and not only handed out on request. In Switzerland, the Federal Council approved the Open Government Data Strategy for Switzerland in April 2014.<br>Further information:<br><a href='http://opendatahandbook.org/guide/en/what-is-open-data/'>Open Data Handbook</a>";
+        s:text "Data are made available to the public to be freely used, re- used and redistributed. An increasing number of governments around the world have adopted and implemented policies promoting the publication of Open Data. Open Government Data goes beyond freedom of information laws because the data is electronically made available by government agencies and not only handed out on request. In Switzerland, the Federal Council approved the <a href='http://www.egovernment.ch/umsetzung/00881/00883/index.html?lang=en&download=NHzLpZeg7t,lnp6I0NTU042l2Z6ln1ad1IZn4Z2qZpnO2Yuq2Z6gpJCDdYF_fWym162epYbg2c_JjKbNoKSn6A--'>Open Government Data Strategy for Switzerland</a> in April 2014.";
+        s:citation [
+            s:url <http://opendatahandbook.org/guide/en/what-is-open-data/> ;
+            s:text "Open Data Handbook ❯ What is Open Data";
+        ] ;
+        s:citation [
+            s:url <https://data.europa.eu/euodp/en/data> ;
+            s:text "EU Open Data Portal";
+        ] ;
+        s:citation [
+            s:url <http://www.egovernment.ch/umsetzung/00881/00883/index.html?lang=en&download=NHzLpZeg7t,lnp6I0NTU042l2Z6ln1ad1IZn4Z2qZpnO2Yuq2Z6gpJCDdYF_fWym162epYbg2c_JjKbNoKSn6A--> ;
+            s:text "Open Government Data Strategy for Switzerland";
+        ]
     ];
     s:item [
         a s:Article;
@@ -48,7 +55,7 @@
     s:item [
         a s:Article;
         s:headline "Semantic Web";
-        s:text "The web of →Linked Data. The Semantic Web is also known as Web 3.0 and extends the classic Web by allowing links not only between pages but between arbitrary data items. Semantic Web Technologies refers to the set of technologies including the standards →RDF, RDFS and OWL that allow to express the meaning of data to electronic agents.";
+        s:text "The web of Linked Data. The Semantic Web is also known as Web 3.0 and extends the classic Web by allowing links not only between pages but between arbitrary data items. Semantic Web Technologies refers to the set of technologies including the standards RDF, RDFS and OWL that allow to express the meaning of data to electronic agents.";
     ];
     s:item [
         a s:Article;
@@ -64,11 +71,14 @@
         a s:Article;
         s:headline "Wikidata";
         s:text "Wikidata is a collaboratively edited knowledge base operated by the Wikimedia Foundation. It is meant to provide a common source of data which can be used by Wikimedia projects such as Wikipedia and by anyone else, under a public domain license.";
+        s:citation [
+            s:url <https://www.wikidata.org/wiki/Wikidata:Introduction> ;
+            s:text "Wikidata ❯ Introduction";
+        ] ;
     ];
     s:item [
         a s:Article;
         s:headline "Data on the Web best practices";
         s:text "A W3C recommendation about how to publish data on the web in order for it to be discoverable and understandable by both humans and machines.";
     ];
-
 .

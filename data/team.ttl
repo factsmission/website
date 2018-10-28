@@ -1,0 +1,31 @@
+@prefix s:<http://schema.org/> .
+
+        <> 
+            a s:WebPage;
+            
+            s:name "Team";
+            s:headline "Our Team";
+
+            s:copyrightYear 2018;
+            s:copyrightHolder "FactsMission";
+            
+            s:item [
+                a s:Article;
+                s:headline "Reto Gmür, founder and CEO";
+                s:text "Studied Philosophy and history of Science and has been working with Linked Data technologies since 2002. He worked with the Jena team at HP Laboratories on Graph Versioning, with Adobe on Semantic Content Management and has helped with the Linked Open Data pilot of the Swiss Government while working with Zazuko.";
+                s:image <https://factsmission.com/wp-content/uploads/2017/04/smile-closer-small.png>;
+            ];
+            s:item [
+                a s:Article;
+                s:headline "Thomas Gehrig, COO";
+                s:text "Thomas Gehrig studied Political Sciences and Journalism and later on specialized in Project Management and Communication. He was a project coordinator for several European research projects in the field of Linked Open Data and teaches management at the School of Design in Bern.";
+                s:image <https://factsmission.com/wp-content/uploads/2017/04/160111-Portrait-Gehrig-Thomas-BFH1-uai-720x480.jpg>;
+            ];
+            s:item [
+                a s:Article;
+                s:headline "Alessio Melandri, synapta development liaison";
+                s:text "Alessio is our liaison with our development team at Synapta in Torino. Alessio is the youngest fellow at Nexa Center for Internet & Society and an expert both in Linked Data technologies as well as agile software development.";
+                s:image <https://factsmission.com/wp-content/uploads/2017/04/alessio.jpg>;
+            ];
+
+        .

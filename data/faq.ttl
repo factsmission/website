@@ -15,8 +15,16 @@
                 s:text "Where do I find Linked Data?";
                 s:acceptedAnswer [
                     a s:Answer;
-                    s:text "Several government agencies have started providing data as Linked Data. <a href='dbpedia.org'>DBpedia.org</a> exposes the contents of Wikipedia as Linked Data. <a href='wikidata.org'>Wikidata.org</a> is a free and open knowledge base that can be read and edited by both humans and machines, Wikidata exposes all its data as Linked Data and allows querying with SPARQL.";
+                    s:text "Several government agencies have started providing data as Linked Data. <a href='https://dbpedia.org'>DBpedia.org</a> exposes the contents of Wikipedia as Linked Data. <a href='https://wikidata.org'>Wikidata.org</a> is a free and open knowledge base that can be read and edited by both humans and machines, Wikidata exposes all its data as Linked Data and allows querying with SPARQL.";
                 ];
+                s:citation [
+                    s:url <https://dbpedia.org> ;
+                    s:text "DBpedia";
+                ] ;
+                s:citation [
+                    s:url <https://www.wikidata.org/wiki/Wikidata:Introduction> ;
+                    s:text "Wikidata ❯ Introduction";
+                ] ;
             ];
         
             s:item [
