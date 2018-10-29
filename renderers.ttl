@@ -14,7 +14,7 @@
 
     {{{:render . r2h:Default}}}
 
-    <div class='uk-card uk-card-body uk-text-meta'>
+    <div id='bottom' class='uk-card uk-card-body uk-text-meta'>
         <p>
             <hr class='uk-divider-icon'>
             <a href='https://w3.org'><img class='uk-align-right' width='130px' src='img/w3.svg'></img></a>
@@ -45,13 +45,109 @@
         </div>
         {{{:render s:mainContentOfPage r2h:Default}}}
     </div>
+    <div class='uk-child-width-expand@s' uk-grid='masonry: true'>
+        <div class='uk-flex uk-child-width-1-2@m uk-flex-wrap uk-flex-top'>
+            {{#s:item}}
+                <div class='uk-card'>
+                    {{{:render . r2h:Default}}}
+                </div>
+            {{/s:item}}
+        </div>
+        <div class='uk-width-1-4@m twitter-parent'>
+            <a class="twitter-timeline" data-theme="light" data-height='100vh' href="https://twitter.com/FactsMission?ref_src=twsrc%5Etfw">Tweets by FactsMission</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+    
+    """
+.
 
-    <div class='uk-flex uk-child-width-1-2@m uk-flex-wrap uk-flex-top'>
-        {{#s:item}}
-            <div class='uk-card'>
-                {{{:render . r2h:Default}}}
-            </div>
-        {{/s:item}}
+<itemList> a r2h:Renderer;
+    r2h:type s:itemList;
+    r2h:context r2h:Default;
+    r2h:mustache """
+    {{{@prefix s: <http://schema.org/>}}}
+    {{#+s:headline}}
+    <div class='uk-card-header'>
+        <h3 class='uk-heading-line'>
+            <span>
+                {{{s:headline}}}
+            </span>
+        </h3>
+    </div>
+    {{/+s:headline}}
+    <div class='uk-card-body'>
+        <ul class='uk-list uk-list-large'>
+            {{#s:item}}
+            <li>
+                {{{:render . s:itemList}}}
+            </li>
+            {{/s:item}}
+        </ul>
+        {{#+s:citation}}
+            <p class="uk-text-meta">
+                <strong>Further Information:</strong>
+                {{#s:citation}}
+                    {{#+s:url}}
+                        <br>
+                        <a class="uk-link-muted" href='{{{s:url}}}'>
+                            {{s:text}}
+                            {{^+s:text}}
+                                {{{s:url}}}
+                            {{/+s:text}}
+                        </a>
+                    {{/+s:url}}
+                {{/s:citation}}
+            </p>
+        {{/+s:citation}}
+    </div>
+    """
+.
+
+<articleInList> a r2h:Renderer;
+    r2h:type s:Article;
+    r2h:context s:itemList;
+    r2h:mustache """
+    {{{@prefix s: <http://schema.org/>}}}
+    {{#+s:headline}}
+    <div>
+        <h4>
+            <span>
+                {{{s:headline}}}
+            </span>
+        </h4>
+    </div>
+    {{/+s:headline}}
+    <div>
+        {{#+s:articleBody}}
+            {{#+s:image}}
+                <img class="uk-align-right uk-width-1-3 uk-margin-small-bottom uk-margin-small-right" src='{{s:image}}'></img>
+            {{/+s:image}}
+            {{{s:articleBody}}}
+        {{/+s:articleBody}}
+        {{^+s:articleBody}}
+            <p>
+                {{#+s:image}}
+                    <img class="uk-align-right uk-width-1-3 uk-margin-small-bottom uk-margin-small-right" src='{{s:image}}'></img>
+                {{/+s:image}}
+                {{{s:text}}}
+            </p>
+        {{/+s:articleBody}}
+        {{#+s:citation}}
+            <p class="uk-text-meta">
+                <strong>Further Information:</strong>
+                {{#s:citation}}
+                    {{#+s:url}}
+                        <br>
+                        <a class="uk-link-muted" href='{{{s:url}}}'>
+                            {{s:text}}
+                            {{^+s:text}}
+                                {{{s:url}}}
+                            {{/+s:text}}
+                        </a>
+                    {{/+s:url}}
+                {{/s:citation}}
+            </p>
+        {{/+s:citation}}
     </div>
     """
 .
@@ -71,12 +167,20 @@
     </div>
     {{/+s:headline}}
     <div class='uk-card-body'>
-        <p>
+        {{#+s:articleBody}}
             {{#+s:image}}
                 <img class="uk-align-right uk-width-1-3 uk-margin-small-bottom uk-margin-small-right" src='{{s:image}}'></img>
             {{/+s:image}}
-            {{{s:text}}}
-        </p>
+            {{{s:articleBody}}}
+        {{/+s:articleBody}}
+        {{^+s:articleBody}}
+            <p>
+                {{#+s:image}}
+                    <img class="uk-align-right uk-width-1-3 uk-margin-small-bottom uk-margin-small-right" src='{{s:image}}'></img>
+                {{/+s:image}}
+                {{{s:text}}}
+            </p>
+        {{/+s:articleBody}}
         {{#+s:citation}}
             <p class="uk-text-meta">
                 <strong>Further Information:</strong>
@@ -143,12 +247,30 @@
                 background-color: #bf360c !important;
                 color: #fff !important;
             }
+            a,
+            a:visited ,
+            a:link {
+                color: #bf360c;
+            }
+            ::selection {
+                background: #bf360c;
+                color: #fff !important;
+            }
+            .uk-text-meta a ,
+            .uk-link-muted a,
+            a.uk-link-muted {
+                color: #999;
+            }
+            .twitter-parent > * {
+                position: sticky !important;
+                top: 0;
+            }
         </style>
     </head>
     <body>
         <nav class='uk-navbar-container uk-light red' uk-navbar>
             <div class='uk-navbar-left uk-width-expand'>
-                <a href='/'><img style='max-height:80px' src='img/logo.svg'></img></a>
+                <a class='uk-logo' href='/'><img style='max-height:80px' src='img/logo.svg'></img></a>
             </div>
             <div class='uk-navbar-right'>
                 <ul class='uk-navbar-nav'>

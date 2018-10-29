@@ -1,9 +1,55 @@
 @prefix s:<http://schema.org/> .
 
-        <> 
-            a s:WebPage;
+<>
+    a s:WebPage;
 
-            s:copyrightYear 2018;
-            s:copyrightHolder "FactsMission";
+    s:headline "Services" ;
 
-        .
+    s:copyrightYear 2018;
+    s:copyrightHolder "FactsMission";
+
+    s:mainContentOfPage [
+        a s:Article;
+        s:articleBody "<p>FactsMission offers consulting and development services to create, process, store, publish and consume linked data. FactsMission helps you provide data in such a way that it can be easily used as the foundation of different applications as well as linked as an authoritative source. FactsMission helps you grow communities around your data to maximize its impact and increase your organization’s influence.</p><p>For example, while the red list of endangered species has been available online for a long time, linked data now connects the species with related scientific treatments giving access to much more information and allowing more refined queries. One can now search for places where the plant has been spotted or search using older or newer scientific names than the ones used on the list.</p>";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Our Mission";
+        s:text "Our mission is to aid people make better decisions by promoting technologies that facilitate verifying claims through linked data technologies.";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Technology";
+        s:text "Linked Data refers to a set of standards promoted by the W3C to create a web of data. Linked Data extends the Web by allowing data to be directly exposed and interlinked with other related data. Meaning, one no longer needs to search through a website or use proprietary APIs to access data, but even disparate sources can be queried using standardized means.";
+    ];
+    s:item [
+        a s:Article;
+        s:headline "Now is the time to act";
+        s:articleBody "<p>On one hand, it was never more necessary, on the other hand we never had better technologies to achieve it.</p><p>The times when truth-relativism was a harmless academic gimmick or even an emancipating story of liberation are long gone. The idea that there is no truth is not only used by authoritarian regimes to dismiss the quest for objectivity as propaganda but is more and more corroding the foundation even of established democracies.</p><p>The good news is, that we now have the technologies that turn the web into a huge decentralized database with cryptographically ascertained authorities and which allow to express statements about facts in a concise and verifiable manner.";
+    ];
+    
+    s:item [
+        a s:itemList;
+        s:headline "How does our work help ... ?" ;
+        s:item [
+            a s:Article ;
+            s:headline "Induviduals" ;
+            s:text "Are equipped with decision making tools to decide what to accept as facts.";
+        ] ;
+        s:item [
+            a s:Article ;
+            s:headline "Public agencies" ;
+            s:text "Publish facts so that they can best be used. This increases the impact of the data and reduces costs to satisfy freedom of information and open data requirements.";
+        ] ;
+        s:item [
+            a s:Article ;
+            s:headline "Open Source" ;
+            s:text "FactsMission is involved in various open source projects around Linked Data technology. We are more than happy to assist developers and development teams to choose the optimal tools and to make the best out of it.";
+        ] ;
+        s:item [
+            a s:Article ;
+            s:headline "Companies & organisations" ;
+            s:text "Can make better decisions based on reliable knowledge.";
+        ] ;
+    ];
+.
