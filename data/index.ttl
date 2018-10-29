@@ -1,4 +1,5 @@
 @prefix s:<http://schema.org/> .
+@prefix f: <http://factsmission.com/> .
 
 <>
     a s:WebPage;
@@ -7,6 +8,8 @@
 
     s:copyrightYear 2018;
     s:copyrightHolder "FactsMission";
+
+    f:hasSideBar true;
 
     s:mainContentOfPage [
         a s:Article;

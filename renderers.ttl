@@ -3,6 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix r2h: <http://rdf2h.github.io/2015/rdf2h#> .
 @prefix s: <http://schema.org/> .
+@prefix f: <http://factsmission.com/> .
 @prefix gt: <http://rdf2h.github.io/2016/generic-rdf2h-renderers/> .
 
 <Frame> a r2h:Renderer;
@@ -36,6 +37,7 @@
     r2h:mustache """
     {{{@prefix s: <http://schema.org/>}}}
     {{{@prefix r2h: <http://rdf2h.github.io/2015/rdf2h#>}}}
+    {{{@prefix f: <http://factsmission.com/>}}}
 
     <div class='uk-card uk-card-default uk-margin uk-margin-medium-top'>
         <div class='uk-card-header'>
@@ -45,7 +47,21 @@
         </div>
         {{{:render s:mainContentOfPage r2h:Default}}}
     </div>
-    <div class='uk-child-width-expand@s' uk-grid='masonry: true'>
+    {{#+f:hasSideBar}}
+        <div class='uk-child-width-expand@s' uk-grid='masonry: true'>
+            <div class='uk-flex uk-child-width-1-2@m uk-flex-wrap uk-flex-top'>
+                {{#s:item}}
+                    <div class='uk-card'>
+                        {{{:render . r2h:Default}}}
+                    </div>
+                {{/s:item}}
+            </div>
+            <div class='uk-width-1-4@m twitter-parent'>
+                <a class="twitter-timeline" data-theme="light" data-height='100vh' href="https://twitter.com/FactsMission?ref_src=twsrc%5Etfw">Tweets by FactsMission</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    {{/+f:hasSideBar}}
+    {{^+f:hasSideBar}}
         <div class='uk-flex uk-child-width-1-2@m uk-flex-wrap uk-flex-top'>
             {{#s:item}}
                 <div class='uk-card'>
@@ -53,11 +69,7 @@
                 </div>
             {{/s:item}}
         </div>
-        <div class='uk-width-1-4@m twitter-parent'>
-            <a class="twitter-timeline" data-theme="light" data-height='100vh' href="https://twitter.com/FactsMission?ref_src=twsrc%5Etfw">Tweets by FactsMission</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-    </div>
-    
+    {{/+f:hasSideBar}}
     """
 .
 
