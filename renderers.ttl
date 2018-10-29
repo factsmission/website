@@ -78,6 +78,7 @@
     r2h:context r2h:Default;
     r2h:mustache """
     {{{@prefix s: <http://schema.org/>}}}
+    {{{@prefix f: <http://factsmission.com/>}}}
     {{#+s:headline}}
     <div class='uk-card-header'>
         <h3 class='uk-heading-line'>
@@ -95,6 +96,20 @@
             </li>
             {{/s:item}}
         </ul>
+        {{#+f:citation}}
+            <div class=''>
+                {{#f:citation}}
+                    {{#+s:url}}
+                        <a class='uk-button uk-button-text' href='{{{s:url}}}'>
+                            {{s:text}}
+                            {{^+s:text}}
+                                {{{s:url}}}
+                            {{/+s:text}}
+                        </a>
+                    {{/+s:url}}
+                {{/f:citation}}
+            </div>
+        {{/+f:citation}}
         {{#+s:citation}}
             <p class="uk-text-meta">
                 <strong>Further Information:</strong>
@@ -144,6 +159,20 @@
                 {{{s:text}}}
             </p>
         {{/+s:articleBody}}
+        {{#+f:citation}}
+            <div class=''>
+                {{#f:citation}}
+                    {{#+s:url}}
+                        <a class='uk-button uk-button-text' href='{{{s:url}}}'>
+                            {{s:text}}
+                            {{^+s:text}}
+                                {{{s:url}}}
+                            {{/+s:text}}
+                        </a>
+                    {{/+s:url}}
+                {{/f:citation}}
+            </div>
+        {{/+f:citation}}
         {{#+s:citation}}
             <p class="uk-text-meta">
                 <strong>Further Information:</strong>
@@ -193,6 +222,20 @@
                 {{{s:text}}}
             </p>
         {{/+s:articleBody}}
+        {{#+f:citation}}
+            <div class=''>
+                {{#f:citation}}
+                    {{#+s:url}}
+                        <a class='uk-button uk-button-text' href='{{{s:url}}}'>
+                            {{s:text}}
+                            {{^+s:text}}
+                                {{{s:url}}}
+                            {{/+s:text}}
+                        </a>
+                    {{/+s:url}}
+                {{/f:citation}}
+            </div>
+        {{/+f:citation}}
         {{#+s:citation}}
             <p class="uk-text-meta">
                 <strong>Further Information:</strong>

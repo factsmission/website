@@ -24,11 +24,19 @@
         a s:Article;
         s:headline "Technology";
         s:text "Linked Data refers to a set of standards promoted by the W3C to create a web of data. Linked Data extends the Web by allowing data to be directly exposed and interlinked with other related data. Meaning, one no longer needs to search through a website or use proprietary APIs to access data, but even disparate sources can be queried using standardized means.";
+        f:citation [
+            s:url </essentials> ;
+            s:text "❯ ESSENTIALS";
+        ] ;
     ];
     s:item [
         a s:Article;
         s:headline "Now is the time to act";
         s:articleBody "<p>On one hand, it was never more necessary, on the other hand we never had better technologies to achieve it.</p><p>The times when truth-relativism was a harmless academic gimmick or even an emancipating story of liberation are long gone. The idea that there is no truth is not only used by authoritarian regimes to dismiss the quest for objectivity as propaganda but is more and more corroding the foundation even of established democracies.</p><p>The good news is, that we now have the technologies that turn the web into a huge decentralized database with cryptographically ascertained authorities and which allow to express statements about facts in a concise and verifiable manner.";
+        f:citation [
+            s:url </values> ;
+            s:text "❯ our values";
+        ] ;
     ];
     
     s:item [
