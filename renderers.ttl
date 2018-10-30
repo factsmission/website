@@ -64,7 +64,7 @@
                         </span>
                     </h3>
                 </div>
-                <a class="twitter-timeline" data-theme="light" data-height='calc(100vh - 80px)' href="https://twitter.com/FactsMission?ref_src=twsrc%5Etfw">Tweets by FactsMission</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-theme="light" data-height='calc(100vh - 78px)' href="https://twitter.com/FactsMission?ref_src=twsrc%5Etfw">Tweets by FactsMission</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
     {{/+f:hasSideBar}}
@@ -346,15 +346,16 @@
                 padding-right: 0;
             }
             .twitter-parent iframe {
-                height: calc(100vh - 80px);
+                border: 1px solid #e5e5e5 !important;
+                height: calc(100vh - 78px);
                 position: sticky !important;
-                top: 80px;
+                top: 79px;
             }
         </style>
     </head>
     <body>
         <div uk-sticky='sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky'>
-            <nav class='uk-navbar-container uk-light red' uk-navbar>
+            <nav class='uk-box-shadow-medium uk-navbar-container uk-light red' uk-navbar>
                 <div class='uk-navbar-left uk-width-expand'>
                     <a class='uk-logo' href='/'><img style='max-height:80px' src='img/logo.svg'></img></a>
                 </div>
