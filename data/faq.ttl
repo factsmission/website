@@ -23,7 +23,7 @@
                 ] ;
                 s:citation [
                     s:url <https://www.wikidata.org/wiki/Wikidata:Introduction> ;
-                    s:text "Wikidata ❯ Introduction";
+                    s:text "Wikidata <span class='bc-divider'></span> Introduction";
                 ] ;
             ];
         
