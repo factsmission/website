@@ -311,13 +311,13 @@
             </div>
         </nav>
 
-        <div class='uk-container'>
+        <div class='content'>
             {{{:render . gt:HtmlBody}}}
         </div>
         <script>
             document.querySelectorAll('a').forEach(a => {
                 if (a.href === window.location.href) {
-                    a.parentElement.classList.add('uk-active')
+                    a.classList.add('current')
                 }
             })
         </script>
