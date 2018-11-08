@@ -1,12 +1,18 @@
 @import 'breakpoints';
 
 .navbar {
-    height: 80px;
+    @include tablet-landscape-plus {
+        height: 80px;
+        justify-content: space-between;
+        top: 0;
+    }
+
+    position: sticky;
+    top: -80px;
+    flex-wrap: wrap;
     width: 100%;
     display: flex;
-    position: sticky;
-    top: 0;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     border-bottom: 1px solid $color-primary;
     //box-shadow: 0 -4px 4px 4px $color-primary;
@@ -23,30 +29,30 @@
     }
 
     .logo {
+        height: 79px;
         padding: 0;
-        justify-self: center;
+        justify-self: left;
     }
 
     svg {
         height: 79px;
+        max-width: 100%;
         width: auto;
         fill: $color-primary;
     }
 
     .navbar-right {
-        justify-self: right;
-        margin-right: 15px;
-    }
+        width: 100%;
+        @include tablet-landscape-plus {
+            width: unset;
+            margin-right: 15px;
+            justify-self: right;
+        }
 
-    /*.navbar-left,
-    .logo,
-    .navbar-right {
-        max-height: 80px;
-    }*/
-
-    .navbar-nav {
         display: flex;
         align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
 
         a {
             margin: 0 15px;
