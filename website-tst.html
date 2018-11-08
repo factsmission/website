@@ -2,7 +2,7 @@
 <html class="fetch" resource="essentials.ttl" context="http://rdf2h.github.io/2016/generic-rdf2h-renderers/FullPage">
 <meta charset="UTF-8">
 <title>FactsMission</title>
-<meta name="viewport" content="initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1" over>
 <link rel="renderers" href="https://rdf2h.github.io/renderers/0.0.1/fallback-renderers.ttl" type="text/turtle" />
 <link rel="renderers" href="renderers.ttl" type="text/turtle" />
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -25,7 +25,7 @@
         </div>
     </nav>
 
-    <div class="uk-container">
+    <div class="content">
         
 
 
@@ -35,7 +35,7 @@
 
 
 
-<div class="uk-card uk-card-default uk-margin uk-margin-medium-top">
+<section class="uk-card-default uk-margin uk-margin-medium-top">
     <div class="uk-card-header">
         <h1>
             Essentials
@@ -47,9 +47,9 @@
         <p>Linked Data technologies are the foundations of the Semantic Web also known as Web 3.0. The documented-oriented traditional web was thought by its inventor as the first stage, the next web shall make knowledge much more directly accessible to both humans and machines. Data becomes interoperable and actionable. With linked data the web can directly answer complex questions using data from disparate sources.</p><hr><p>An example please?<br>Say you love jazz, are very sensitive to ozone and want to move to Switzerland despite your limited budget. Which town is best for you? All relevant data is available on the web, but only with linked data and its query language SPARQL you can make a single query that is answered using data from the federal office of the environment for the ozone levels, from the statistical office for the housing pricing and from Time Out magazine for the jazz events. And the best of it: thanks to the W3C web standards the different sources do not need to care about connecting to each other or even know each other, they can be used in concert simply because they all publish adhering to standards and best practices.</p><p class="uk-text-lead">The following introduces some key concepts and technologies for Linked Data.</p>
 </div>
 
-</div>
+</section>
     <div class="uk-flex uk-child-width-1-2@m uk-flex-wrap uk-flex-top">
-            <div class="uk-card">
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -65,8 +65,8 @@
         </p>
 </div>
 
-            </div>
-            <div class="uk-card">
+            </section>
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -82,8 +82,8 @@
         </p>
 </div>
 
-            </div>
-            <div class="uk-card">
+            </section>
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -114,8 +114,8 @@
         </p>
 </div>
 
-            </div>
-            <div class="uk-card">
+            </section>
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -131,8 +131,8 @@
         </p>
 </div>
 
-            </div>
-            <div class="uk-card">
+            </section>
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -148,8 +148,8 @@
         </p>
 </div>
 
-            </div>
-            <div class="uk-card">
+            </section>
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -165,8 +165,8 @@
         <p></p>
 </div>
 
-            </div>
-            <div class="uk-card">
+            </section>
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -182,8 +182,8 @@
         </p>
 </div>
 
-            </div>
-            <div class="uk-card">
+            </section>
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -199,8 +199,8 @@
         </p>
 </div>
 
-            </div>
-            <div class="uk-card">
+            </section>
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -216,8 +216,8 @@
         </p>
 </div>
 
-            </div>
-            <div class="uk-card">
+            </section>
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -240,8 +240,8 @@
         </p>
 </div>
 
-            </div>
-            <div class="uk-card">
+            </section>
+            <section class="">
                 
 
 <div class="uk-card-header">
@@ -257,11 +257,11 @@
         </p>
 </div>
 
-            </div>
+            </section>
     </div>
 
 
-<div id="bottom" class="uk-card uk-card-body uk-text-meta">
+<section id="bottom" class="uk-card-body uk-text-meta">
     <p>
         </p><hr class="uk-divider-icon">
         <a href="https://w3.org"><img class="uk-align-right" width="130px" src="img/w3.svg"></a>
@@ -273,13 +273,13 @@
         <br>
         FactsMission, Erlacherweg 6, 2503 Biel/Bienne, Switzerland
     </p>
-</div>
+</section>
 
     </div>
     <script>
         document.querySelectorAll('a').forEach(a => {
             if (a.href === window.location.href) {
-                a.parentElement.classList.add('uk-active')
+                a.classList.add('current')
             }
         })
     </script>

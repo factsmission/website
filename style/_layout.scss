@@ -1,0 +1,107 @@
+@import 'breakpoints';
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid $color-primary;
+    //box-shadow: 0 -4px 4px 4px $color-primary;
+    background-color: $color-on-primary;
+    color: $color-primary;
+
+    * {
+        border: none !important;
+        padding: 0;
+    }
+
+    .navbar-left {
+        justify-self: left;
+    }
+
+    .logo {
+        padding: 0;
+        justify-self: center;
+    }
+
+    svg {
+        height: 79px;
+        width: auto;
+        fill: $color-primary;
+    }
+
+    .navbar-right {
+        justify-self: right;
+        margin-right: 15px;
+    }
+
+    /*.navbar-left,
+    .logo,
+    .navbar-right {
+        max-height: 80px;
+    }*/
+
+    .navbar-nav {
+        display: flex;
+        align-content: center;
+
+        a {
+            margin: 0 15px;
+            text-transform: uppercase;
+            display: block;
+            height: 1lh;
+            align-self: center;
+        }
+
+        .current {
+            color: $color-accent-dark;
+        }
+    }
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2 !important;
+}
+
+/*body>* {
+    background-color: #f7f7f7;
+}*/
+
+section {
+    border-top: 1px solid #ddd;
+    padding: 30px 0;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content {
+    @include tablet-portrait-plus {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    @include desktop-plus {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+html {
+    overflow: visible;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
