@@ -7,6 +7,11 @@
         top: 0;
     }
 
+    @include desktop-plus {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
     position: sticky;
     top: -80px;
     flex-wrap: wrap;
@@ -28,21 +33,9 @@
         justify-self: left;
     }
 
-    .logo {
-        height: 79px;
-        padding: 0;
-        justify-self: left;
-    }
-
-    svg {
-        height: 79px;
-        max-width: 100%;
-        width: auto;
-        fill: $color-primary;
-    }
-
     .navbar-right {
         width: 100%;
+
         @include tablet-landscape-plus {
             width: unset;
             margin-right: 15px;
@@ -65,6 +58,70 @@
         .current {
             color: $color-accent-dark;
         }
+    }
+}
+
+.bottombar {
+    @include tablet-landscape-plus {
+        justify-content: space-between;
+    }
+
+    @include desktop-plus {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    padding: 21.5px 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top: 1px solid $color-primary;
+    //box-shadow: 0 -4px 4px 4px $color-primary;
+    background-color: $color-on-primary;
+    color: $color-primary;
+
+    * {
+        border: none !important;
+        padding: 0;
+    }
+
+    .bottombar-left {
+        justify-self: left;
+    }
+
+    a {
+        margin: 0 15px;
+        text-transform: uppercase;
+        display: block;
+        height: 1lh;
+        align-self: center;
+    }
+
+    .bottombar-right {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.logo {
+    height: 79px;
+    padding: 0;
+
+    svg {
+        height: 79px;
+        max-width: 100%;
+        width: auto;
+        fill: $color-primary;
+    }
+
+    * {
+        height: 79px;
+        max-width: 100%;
+        width: auto;
     }
 }
 

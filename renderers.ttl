@@ -13,21 +13,25 @@
     {{{@prefix s: <http://schema.org/>}}}
     {{{@prefix r2h: <http://rdf2h.github.io/2015/rdf2h#>}}}
 
-    {{{:render . r2h:Default}}}
+    <div class='content'>
+        {{{:render . r2h:Default}}}
+    </div>
 
-    <section id='bottom' class='uk-card-body uk-text-meta'>
-        <p>
-            <hr class='uk-divider-icon'>
-            <a href='https://w3.org'><img class='uk-align-right' width='130px' src='img/w3.svg'></img></a>
-            +41 58 255 19 99
-            <br>
-            info@factsmission.com
-            </p><p>
-            &copy; {{s:copyrightYear}} {{s:copyrightHolder}}: All rights reserved.
-            <br>
-            {{s:copyrightHolder}}, Erlacherweg 6, 2503 Biel/Bienne, Switzerland
-        </p>
-    </section>
+    <div class='bottombar'>
+        <div class='bottombar-left'>
+            <p>
+                +41 58 255 19 99 &mdash; info@factsmission.com
+            </p>
+            <p>
+                &copy; {{s:copyrightYear}} {{s:copyrightHolder}}: All rights reserved.
+                <br>
+                {{s:copyrightHolder}}, Erlacherweg 6, 2503 Biel/Bienne, Switzerland
+            </p>
+        </div>
+        <div class='bottombar-right'>
+            <a href='https://w3.org'><img width='134px' src='img/w3.svg'></a>
+        </div>
+    </div>
     """
 .
 
@@ -312,9 +316,8 @@
             </div>
         </nav>
 
-        <div class='content'>
-            {{{:render . gt:HtmlBody}}}
-        </div>
+        {{{:render . gt:HtmlBody}}}
+
         <script>
             document.querySelectorAll('a').forEach(a => {
                 if (a.href === window.location.href) {

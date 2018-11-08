@@ -92,23 +92,18 @@
     top: 0;
   }
 }
+@media (min-width: 1200px) {
+  .navbar {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
 .navbar * {
   border: none !important;
   padding: 0;
 }
 .navbar .navbar-left {
   justify-self: left;
-}
-.navbar .logo {
-  height: 79px;
-  padding: 0;
-  justify-self: left;
-}
-.navbar svg {
-  height: 79px;
-  max-width: 100%;
-  width: auto;
-  fill: #c62828;
 }
 .navbar .navbar-right {
   width: 100%;
@@ -133,6 +128,65 @@
 }
 .navbar .navbar-right .current {
   color: #4bacb8;
+}
+
+.bottombar {
+  padding: 21.5px 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-top: 1px solid #c62828;
+  background-color: #ffffff;
+  color: #c62828;
+}
+@media (min-width: 900px) {
+  .bottombar {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .bottombar {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+.bottombar * {
+  border: none !important;
+  padding: 0;
+}
+.bottombar .bottombar-left {
+  justify-self: left;
+}
+.bottombar a {
+  margin: 0 15px;
+  text-transform: uppercase;
+  display: block;
+  height: 1lh;
+  align-self: center;
+}
+.bottombar .bottombar-right {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 79px;
+  padding: 0;
+}
+.logo svg {
+  height: 79px;
+  max-width: 100%;
+  width: auto;
+  fill: #c62828;
+}
+.logo * {
+  height: 79px;
+  max-width: 100%;
+  width: auto;
 }
 
 body {
