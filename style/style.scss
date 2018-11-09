@@ -1,58 +1,9 @@
-@import 'variables';
-@import 'breakpoints';
+@import 'util/variables';
+@import 'util/breakpoints';
+@import 'util/fonts';
 @import 'colors';
+@import 'fonts';
 @import 'layout';
-
-/* Fonts */
-
-$text-font-family: 'Noto Sans',
-sans-serif;
-$heading-font-family: 'Noto Serif',
-sans-serif;
-
-* {
-    font-family: $text-font-family;
-}
-
-h1,
-h2,
-h3,
-h4,
-h1 *,
-h2 *,
-h3 *,
-h4 * {
-    font-family: $heading-font-family;
-}
-
-a,
-a:link {
-    color: $color-primary;
-    text-decoration: none;
-    border-bottom: 1px solid $color-gray-light;
-    padding: 4px 0;
-    margin: 0;
-}
-
-a:visited {
-    color: $color-dark;
-}
-
-a:hover {
-    color: $color-gray;
-    text-decoration: none;
-}
-
-::selection {
-    background: $color-accent;
-    color: $color-on-accent;
-}
-
-.muted,
-.muted * {
-    color: $color-gray;
-}
-
 
 .bc-divider:before {
     margin-right: 5px;

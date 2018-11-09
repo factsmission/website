@@ -73,6 +73,49 @@
   color: #085;
 }
 
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h1 *,
+h2 *,
+h3 *,
+h4 * {
+  font-family: "Noto Serif", sans-serif;
+}
+
+a,
+a:link {
+  color: #c62828;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  padding: 4px 0;
+  margin: 0;
+}
+
+a:visited {
+  color: #8e0000;
+}
+
+a:hover {
+  color: #b0bec5;
+  text-decoration: none;
+}
+
+::selection {
+  background: #80deea;
+  color: #000000;
+}
+
+.muted,
+.muted * {
+  color: #b0bec5;
+}
+
 .navbar {
   position: sticky;
   top: -80px;
@@ -84,6 +127,7 @@
   border-bottom: 1px solid #c62828;
   background-color: #ffffff;
   color: #c62828;
+  z-index: 2000;
 }
 @media (min-width: 900px) {
   .navbar {
@@ -131,6 +175,9 @@
 }
 
 .bottombar {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
   padding: 21.5px 30px;
   flex-wrap: wrap;
   width: 100%;
@@ -141,15 +188,20 @@
   background-color: #ffffff;
   color: #c62828;
 }
+@media (min-width: 600px) {
+  .bottombar {
+    width: 600px;
+  }
+}
 @media (min-width: 900px) {
   .bottombar {
+    width: 900px;
     justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
   .bottombar {
     width: 1000px;
-    margin: 0 auto;
   }
 }
 .bottombar * {
@@ -201,26 +253,47 @@ body {
 }*/
 section {
   border-top: 1px solid #ddd;
-  padding: 30px 0;
+  padding: 30px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
 
+.main {
+  border: 1px solid #ddd;
+  margin: 30px 0;
+}
+.main > *, .main > * > * {
+  margin-top: 0;
+}
+.main h1,
+.main h2,
+.main h3,
+.main h4,
+.main h1 *,
+.main h2 *,
+.main h3 *,
+.main h4 * {
+  font-size: 2em;
+}
+
 .content {
-  padding-left: 30px;
-  padding-right: 30px;
+  position: relative;
+  margin: 0 auto;
 }
 @media (min-width: 600px) {
   .content {
     width: 600px;
-    margin: 0 auto;
+  }
+}
+@media (min-width: 900px) {
+  .content {
+    width: 900px;
   }
 }
 @media (min-width: 1200px) {
   .content {
     width: 1000px;
-    margin: 0 auto;
   }
 }
 
@@ -232,50 +305,6 @@ html {
 ::after,
 ::before {
   box-sizing: border-box;
-}
-
-/* Fonts */
-* {
-  font-family: "Noto Sans", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h1 *,
-h2 *,
-h3 *,
-h4 * {
-  font-family: "Noto Serif", sans-serif;
-}
-
-a,
-a:link {
-  color: #c62828;
-  text-decoration: none;
-  border-bottom: 1px solid #ddd;
-  padding: 4px 0;
-  margin: 0;
-}
-
-a:visited {
-  color: #8e0000;
-}
-
-a:hover {
-  color: #b0bec5;
-  text-decoration: none;
-}
-
-::selection {
-  background: #80deea;
-  color: #000000;
-}
-
-.muted,
-.muted * {
-  color: #b0bec5;
 }
 
 .bc-divider:before {

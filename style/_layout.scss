@@ -1,4 +1,6 @@
-@import 'breakpoints';
+@import 'util/breakpoints';
+@import 'util/variables';
+@import 'util/fonts';
 
 .navbar {
     @include tablet-landscape-plus {
@@ -23,6 +25,7 @@
     //box-shadow: 0 -4px 4px 4px $color-primary;
     background-color: $color-on-primary;
     color: $color-primary;
+    z-index: 2000;
 
     * {
         border: none !important;
@@ -62,15 +65,22 @@
 }
 
 .bottombar {
+    @include tablet-portrait-plus {
+        width: 600px;
+    }
+
     @include tablet-landscape-plus {
+        width: 900px;
         justify-content: space-between;
     }
 
     @include desktop-plus {
         width: 1000px;
-        margin: 0 auto;
     }
 
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
     padding: 21.5px 30px;
     flex-wrap: wrap;
     width: 100%;
@@ -138,25 +148,41 @@ body {
 
 section {
     border-top: 1px solid #ddd;
-    padding: 30px 0;
+    padding: 30px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
 
+.main {
+    border: 1px solid #ddd;
+    margin: 30px 0;
+
+    &>*,
+    &>*>* {
+        margin-top: 0;
+    }
+
+    @include headings {
+        font-size: 2em
+    }
+}
+
 .content {
     @include tablet-portrait-plus {
         width: 600px;
-        margin: 0 auto;
+    }
+
+    @include tablet-landscape-plus {
+        width: 900px;
     }
 
     @include desktop-plus {
         width: 1000px;
-        margin: 0 auto;
     }
 
-    padding-left: 30px;
-    padding-right: 30px;
+    position: relative;
+    margin: 0 auto;
 }
 
 html {
