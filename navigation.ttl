@@ -1,0 +1,28 @@
+@prefix s:<http://schema.org/> .
+
+[] a s:BreadcrumbList;
+  s:itemListElement [
+    s:item <https://factsmission.com/>;
+    s:position 1
+  ]
+  s:itemListElement [
+    s:item <https://factsmission.com/essentials>;
+    s:position 2
+  ]
+  s:itemListElement [
+    s:item <https://factsmission.com/faq>;
+    s:position 3
+  ]
+  s:itemListElement [
+    s:item <https://factsmission.com/team>;
+    s:position 4
+  ]
+  s:itemListElement [
+    s:item <https://factsmission.com/values>;
+    s:position 5
+  ]
+  s:itemListElement [
+    s:item <https://factsmission.com/projects>;
+    s:position 6
+  ]
+.
