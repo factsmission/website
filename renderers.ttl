@@ -22,10 +22,14 @@
             +41 58 255 19 99
             <br>
             info@factsmission.com
-            </p><p>
+        </p>
+        <p>
             &copy; {{s:copyrightYear}} {{s:copyrightHolder}}: All rights reserved.
             <br>
             {{s:copyrightHolder}}, Erlacherweg 6, 2503 Biel/Bienne, Switzerland
+        </p>
+        <p>
+            {{s:item<-/s:position}}
         </p>
     </div>
     """
