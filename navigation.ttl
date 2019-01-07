@@ -35,12 +35,12 @@
     s:url <https://factsmission.com/values>;
     s:name "Our Values";
     s:position 5;
-  ];
-  s:itemListElement [
-    a s:ListItem;
-    s:item <https://factsmission.com/projects>;
-    s:url <https://factsmission.com/projects>;
-    s:name "Projects";
-    s:position 6;
-  ]
+  ]#;
+  #s:itemListElement [
+  #  a s:ListItem;
+  #  s:item <https://factsmission.com/projects>;
+  #  s:url <https://factsmission.com/projects>;
+  #  s:name "Projects";
+  #  s:position 6;
+  #]
 ] .
