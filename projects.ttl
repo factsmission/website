@@ -1,4 +1,5 @@
 @prefix s:<http://schema.org/> .
+@prefix f: <http://factsmission.com/> .
 
 <> 
     a s:WebPage;
