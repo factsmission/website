@@ -29,9 +29,34 @@
             {{s:copyrightHolder}}, Erlacherweg 6, 2503 Biel/Bienne, Switzerland
         </p>
         <p>
-            {{s:item<-/s:position}}
+            {{#s:item<-}}
+                {{#s:itemListElement<-}}
+                    {{{:render . r2h:Default}}}
+                {{/s:itemListElement<-}}
+            {{/s:item<-}}
         </p>
     </div>
+    """
+.
+
+<Navigation> a r2h:Renderer;
+    r2h:type s:BreadcrumbList;
+    r2h:context r2h:Default;
+    r2h:mustache """
+    <div uk-sticky='sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky'>
+            <nav class='uk-box-shadow-medium uk-navbar-container uk-light red' uk-navbar>
+                <div class='uk-navbar-left uk-width-expand'>
+                    <a class='uk-logo' href='/'><img style='max-height:80px' src='img/logo.svg'></img></a>
+                </div>
+                <div class='uk-navbar-right'>
+                    <ul class='uk-navbar-nav'>
+                        {{#s:itemListElement}}
+                            <li><a href='{{s:url}}'>{{s:name}}</a></li>
+                        {{/s:itemListElement}}
+                    </ul>
+                </div>
+            </nav>
+        </div>
     """
 .
 
