@@ -24,6 +24,21 @@
         ];
     ], [
         a s:Article;
+        s:headline "RDF2h";
+        s:articleBody "RDF2h is a tool for rendering RDF resources using renderes defined in RDF using javascript and mustache templates.";
+        s:text "RDF2h is a tool for rendering RDF resources using renderes defined in RDF using javascript and mustache templates.";
+        s:citation [
+            s:url <https://github.com/rdf2h/rdf2h>;
+            s:text "Github Repository";
+        ],[
+            s:url <http://rdf2h.github.io/>;
+            s:text "More on rdf2h.github.io";
+        ],[
+            s:url <https://rdf2h.github.io/rdf2h-documentation/>;
+            s:text "Try it out online";
+        ];
+    ], [
+        a s:Article;
         s:headline "Twee.fi";
         s:articleBody "Write Claim Reviews for Tweets.<br>Twee-Fi uses Linked Data technologies, the <a href='https://schema.org/''>schema.org</a> vocabulary, wich is supported by major search engines and is built on <a href='https://github.com/solid/solid'>Solid</a> technologies to allow for a decentralized web with data controlled by the users.";
         s:text "Write Claim Reviews for Tweets. Twee-Fi uses Linked Data technologies, the schema.org vocabulary, wich is supported by major search engines and is built on Solid technologies to allow for a decentralized web with data controlled by the users.";
