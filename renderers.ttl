@@ -37,6 +37,7 @@
     r2h:context r2h:Default;
     r2h:mustache """
         {{{@prefix s: <http://schema.org/>}}}
+        {{{@prefix f: <http://factsmission.com/>}}}
         <div uk-sticky='sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky'>
             <nav class='uk-box-shadow-medium uk-navbar-container uk-light red' uk-navbar>
                 <div class='uk-navbar-left uk-width-expand'>
@@ -44,7 +45,7 @@
                 </div>
                 <div class='uk-navbar-right'>
                     <ul class='uk-navbar-nav'>
-                        {{{:render . <Navigation>}}}
+                        {{{:render . f:Navigation}}}
                     </ul>
                 </div>
             </nav>
@@ -54,7 +55,7 @@
 
 <SortList> a r2h:Renderer;
     r2h:type s:BreadcrumbList;
-    r2h:context <Navigation>;
+    r2h:context f:Navigation;
     r2h:javaScript """
         let schema = suffix => $rdf.sym('http://schema.org/'+suffix);
         let list = n.out(schema('itemListElement')).split();
@@ -68,7 +69,7 @@
 
 <NavItem> a r2h:Renderer;
     r2h:type s:ListItem;
-    r2h:context <Navigation>;
+    r2h:context f:Navigation;
     r2h:mustache """
         {{{@prefix s: <http://schema.org/>}}}
         <li><a href='{{s:url}}'>{{s:name}}</a></li>
