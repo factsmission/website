@@ -9,4 +9,17 @@
     s:copyrightYear 2018;
     s:copyrightHolder "FactsMission";
 
+    s:item [
+        a s:Article;
+        s:headline "RDFa Parser";
+        s:articleBody "An RDFa parser in JS.<br>We aim for full support of <a href='https://www.w3.org/TR/html-rdfa/'>HTML+RDFa 1.1</a>."
+        s:text "An RDFa parser in JS. We aim for full support of HTML+RDFa 1.1.";
+        f:citation [
+            s:url <https://github.com/factsmission/rdfa-parser> ;
+            s:text "Github Repository";
+        ],[
+            s:url <https://www.w3.org/TR/html-rdfa/> ;
+            s:text "HTML+RDFa 1.1";
+        ];
+    ];
 .
