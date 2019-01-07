@@ -15,7 +15,7 @@
         s:headline "RDFa Parser";
         s:articleBody "An RDFa parser in JS.<br>We aim for full support of <a href='https://www.w3.org/TR/html-rdfa/'>HTML+RDFa 1.1</a>.";
         s:text "An RDFa parser in JS. We aim for full support of HTML+RDFa 1.1.";
-        f:citation [
+        s:citation [
             s:url <https://github.com/factsmission/rdfa-parser>;
             s:text "Github Repository";
         ],[
@@ -27,7 +27,7 @@
         s:headline "Twee.fi";
         s:articleBody "Write Claim Reviews for Tweets.<br>Twee-Fi uses Linked Data technologies, the <a href='https://schema.org/''>schema.org</a> vocabulary, wich is supported by major search engines and is built on <a href='https://github.com/solid/solid'>Solid</a> technologies to allow for a decentralized web with data controlled by the users.";
         s:text "Write Claim Reviews for Tweets. Twee-Fi uses Linked Data technologies, the schema.org vocabulary, wich is supported by major search engines and is built on Solid technologies to allow for a decentralized web with data controlled by the users.";
-        f:citation [
+        s:citation [
             s:url <https://github.com/factsmission/twee-fi>;
             s:text "Github Repository";
         ],[
@@ -39,7 +39,7 @@
         s:headline "Synospecies";
         s:articleBody "Look up taxonomic treatment data provided by <a href='http://plazi.org/'>PLAZI</a>";
         s:text "Look up taxonomic treatment data provided by PLAZI";
-        f:citation [
+        s:citation [
             s:url <https://factsmission.github.io/synospecies>;
             s:text "Website";
         ];
