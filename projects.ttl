@@ -5,10 +5,15 @@
     a s:WebPage;
     
     s:name "Projects";
-    s:headline "Our Projects";
+    s:headline "Our Open Source Projects";
 
     s:copyrightYear 2018;
     s:copyrightHolder "FactsMission";
+
+    s:mainContentOfPage [
+        a s:Article;
+        s:text "FactsMission is involved in various open source projects. The following list offers an overview over several of these";
+    ];
 
     s:item [
         a s:Article;
