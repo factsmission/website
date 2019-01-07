@@ -36,16 +36,15 @@
     r2h:type s:BreadcrumbList;
     r2h:context r2h:Default;
     r2h:mustache """
-    <div uk-sticky='sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky'>
+        {{{@prefix s: <http://schema.org/>}}}
+        <div uk-sticky='sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky'>
             <nav class='uk-box-shadow-medium uk-navbar-container uk-light red' uk-navbar>
                 <div class='uk-navbar-left uk-width-expand'>
                     <a class='uk-logo' href='/'><img style='max-height:80px' src='img/logo.svg'></img></a>
                 </div>
                 <div class='uk-navbar-right'>
                     <ul class='uk-navbar-nav'>
-                        {{#s:itemListElement}}
-                            <li><a href='{{s:url}}'>{{s:name}}</a></li>
-                        {{/s:itemListElement}}
+                        {{{:render . <Navigation>}}}
                     </ul>
                 </div>
             </nav>
@@ -53,11 +52,33 @@
     """
 .
 
+<SortList> a r2h:Renderer;
+    r2h:type s:BreadcrumbList;
+    r2h:context <Navigation>;
+    r2h:javaScript """
+        let schema = suffix => $rdf.sym('http://schema.org/'+suffix);
+        let list = n.out(schema('itemListElement')).split();
+        list.sort((a,b) => {
+            var pos = schema('position');
+            return a.out(pos).value - b.out(pos).value;
+        });
+        list.forEach(k => print(render(k)));
+    """
+.
+
+<NavItem> a r2h:Renderer;
+    r2h:type s:ListItem;
+    r2h:context <Navigation>;
+    r2h:mustache """
+        {{{@prefix s: <http://schema.org/>}}}
+        <li><a href='{{s:url}}'>{{s:name}}</a></li>
+    """
+.
+
 <Page> a r2h:Renderer;
     r2h:type s:WebPage;
     r2h:context r2h:Default;
     r2h:mustache """
-    {{{@prefix s: <http://schema.org/>}}}
     {{{@prefix r2h: <http://rdf2h.github.io/2015/rdf2h#>}}}
     {{{@prefix f: <http://factsmission.com/>}}}
 
