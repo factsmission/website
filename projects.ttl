@@ -34,5 +34,14 @@
             s:url <https://twee.fi/about>;
             s:text "More on Twee.fi";
         ];
+    ], [
+        a s:Article;
+        s:headline "Synospecies";
+        s:articleBody "Look up taxonomic treatment data provided by <a href='http://plazi.org/'>PLAZI</a>";
+        s:text "Look up taxonomic treatment data provided by PLAZI";
+        f:citation [
+            s:url <https://factsmission.github.io/synospecies>;
+            s:text "Website";
+        ];
     ];
 .
