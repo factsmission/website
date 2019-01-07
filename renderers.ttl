@@ -28,13 +28,6 @@
             <br>
             {{s:copyrightHolder}}, Erlacherweg 6, 2503 Biel/Bienne, Switzerland
         </p>
-        <p>
-            {{#s:item<-}}
-                {{#s:itemListElement<-}}
-                    {{{:render . r2h:Default}}}
-                {{/s:itemListElement<-}}
-            {{/s:item<-}}
-        </p>
     </div>
     """
 .
@@ -383,21 +376,11 @@
         </style>
     </head>
     <body>
-        <div uk-sticky='sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky'>
-            <nav class='uk-box-shadow-medium uk-navbar-container uk-light red' uk-navbar>
-                <div class='uk-navbar-left uk-width-expand'>
-                    <a class='uk-logo' href='/'><img style='max-height:80px' src='img/logo.svg'></img></a>
-                </div>
-                <div class='uk-navbar-right'>
-                    <ul class='uk-navbar-nav'>
-                        <li><a href='essentials'>Essentials</a></li>
-                        <li><a href='faq'>FAQ</a></li>
-                        <li><a href='team'>Team</a></li>
-                        <li><a href='values'>Our Values</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        {{#s:item<-}}
+            {{#s:itemListElement<-}}
+                {{{:render . r2h:Default}}}
+            {{/s:itemListElement<-}}
+        {{/s:item<-}}
 
         <div class='uk-container'>
             {{{:render . gt:HtmlBody}}}
