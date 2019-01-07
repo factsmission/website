@@ -29,7 +29,11 @@
             {{s:copyrightHolder}}, Erlacherweg 6, 2503 Biel/Bienne, Switzerland
         </p>
         <p>
-            {{s:item<-/s:position}}
+            {{#s:item<-}}
+                {{#s:itemListElement<-}}
+                    {{{:render . r2h:Default}}}
+                {{/s:itemListElement<-}}
+            {{/s:item<-}}
         </p>
     </div>
     """
