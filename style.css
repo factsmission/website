@@ -57,3 +57,17 @@ a.uk-link-muted {
   position: sticky !important;
   top: 79px;
 }
+
+.logo-box {
+  justify-content: center;
+}
+
+.logo-box,
+.logo {
+  max-height: 80px;
+  min-width: 120px;
+}
+
+.uk-navbar-right {
+  justify-content: center;
+}

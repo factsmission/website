@@ -43,11 +43,9 @@
                 <div class='uk-navbar-left uk-width-expand'>
                     <a class='uk-logo' href='/'><img style='max-height:80px' src='img/logo.svg'></img></a>
                 </div>
-                <div class='uk-navbar-right'>
-                    <ul class='uk-navbar-nav'>
-                        {{{:render . f:Navigation}}}
-                    </ul>
-                </div>
+                <ul class='uk-navbar-right uk-navbar-nav'>
+                    {{{:render . f:Navigation}}}
+                </ul>
             </nav>
         </div>
     """
