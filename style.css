@@ -1,0 +1,59 @@
+h1,
+h2,
+h3,
+h4,
+h1 *,
+h2 *,
+h3 *,
+h4 * {
+  font-family: 'Noto Serif', sans-serif
+}
+
+* {
+  font-family: 'Noto Sans', sans-serif
+}
+
+/*.uk-card-default {
+border: 1px solid #e5e5e5;
+box-shadow: none;
+}*/
+
+.bc-divider:before {
+  margin-right: 5px;
+  margin-left: 5px;
+  content: '❯';
+}
+
+.red {
+  background-color: #bf360c !important;
+  color: #fff !important;
+}
+
+a,
+a:visited,
+a:link {
+  color: #bf360c;
+}
+
+::selection {
+  background: #902909;
+  color: #fff !important;
+}
+
+.uk-text-meta a,
+.uk-link-muted a,
+a.uk-link-muted {
+  color: #999;
+}
+
+.twitter-parent .uk-card-header {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.twitter-parent iframe {
+  border: 1px solid #e5e5e5 !important;
+  height: calc(100vh - 78px);
+  position: sticky !important;
+  top: 79px;
+}
