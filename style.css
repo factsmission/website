@@ -58,6 +58,19 @@ a.uk-link-muted {
   top: 79px;
 }
 
+.uk-navbar {
+  flex-wrap: wrap;
+}
+
+.uk-navbar-item, .uk-navbar-nav>li>a {
+  height: unset;
+  padding: 0;
+}
+
+.uk-navbar-nav>li {
+  padding: 15px;
+}
+
 .logo-box {
   justify-content: center;
 }
