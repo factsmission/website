@@ -40,8 +40,8 @@
         {{{@prefix f: <http://factsmission.com/>}}}
         <div uk-sticky='sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky'>
             <nav class='uk-box-shadow-medium uk-navbar-container uk-light red' uk-navbar>
-                <div class='uk-navbar-left uk-width-expand'>
-                    <a class='uk-logo' href='/'><img style='max-height:80px' src='img/logo.svg'></img></a>
+                <div class='uk-navbar-left uk-width-expand logo-box'>
+                    <a class='uk-logo' href='/'><img class='logo' src='img/logo.svg'></img></a>
                 </div>
                 <ul class='uk-navbar-right uk-navbar-nav'>
                     {{{:render . f:Navigation}}}
