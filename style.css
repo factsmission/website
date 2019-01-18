@@ -83,4 +83,11 @@ a.uk-link-muted {
 
 .uk-navbar-right {
   justify-content: center;
+  flex-grow: 1;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    max-height: 50px;
+  }
 }
