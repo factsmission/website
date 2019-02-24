@@ -1,5 +1,5 @@
 @prefix s:<http://schema.org/> .
-@prefix f: <http://factsmission.com/> .
+@prefix f: <https://schema.factsmission.com/> .
 
 <./>
     a s:WebPage;

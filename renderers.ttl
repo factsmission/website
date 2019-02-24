@@ -3,7 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix r2h: <http://rdf2h.github.io/2015/rdf2h#> .
 @prefix s: <http://schema.org/> .
-@prefix f: <http://factsmission.com/> .
+@prefix f: <https://schema.factsmission.com/> .
 @prefix gt: <http://rdf2h.github.io/2016/generic-rdf2h-renderers/> .
 
 <Frame> a r2h:Renderer;
@@ -37,7 +37,7 @@
     r2h:context r2h:Default;
     r2h:mustache """
         {{{@prefix s: <http://schema.org/>}}}
-        {{{@prefix f: <http://factsmission.com/>}}}
+        {{{@prefix f: <https://schema.factsmission.com/>}}}
         <div uk-sticky='sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky'>
             <nav class='uk-box-shadow-medium uk-navbar-container uk-light red' uk-navbar>
                 <div class='uk-navbar-left uk-width-expand logo-box'>
@@ -79,7 +79,7 @@
     r2h:context r2h:Default;
     r2h:mustache """
     {{{@prefix r2h: <http://rdf2h.github.io/2015/rdf2h#>}}}
-    {{{@prefix f: <http://factsmission.com/>}}}
+    {{{@prefix f: <https://schema.factsmission.com/>}}}
 
     <div class='uk-card uk-card-default uk-margin uk-margin-medium-top'>
         <div class='uk-card-header'>
@@ -127,7 +127,7 @@
     r2h:context r2h:Default;
     r2h:mustache """
     {{{@prefix s: <http://schema.org/>}}}
-    {{{@prefix f: <http://factsmission.com/>}}}
+    {{{@prefix f: <https://schema.factsmission.com/>}}}
     {{#+s:headline}}
     <div class='uk-card-header'>
         <h3 class='uk-heading-line'>
