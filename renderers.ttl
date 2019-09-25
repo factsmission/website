@@ -18,7 +18,7 @@
     <div id='bottom' class='uk-card uk-card-body uk-text-meta'>
         <p>
             <hr class='uk-divider-icon'>
-            <a href='https://w3.org'><img class='uk-align-right' width='130px' src='img/w3.svg'></img></a>
+            <a href='https://w3.org' aria-label='We are a W3C-Member'><img class='uk-align-right' width='130px' src='img/w3.svg' alt='W3C-Member Logo'></img></a>
             +41 58 255 19 99
             <br>
             info@factsmission.com
@@ -41,7 +41,7 @@
         <div uk-sticky='sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky'>
             <nav class='uk-box-shadow-medium uk-navbar-container uk-light red' uk-navbar>
                 <div class='uk-navbar-left uk-width-expand logo-box'>
-                    <a class='uk-logo' href='/'><img class='logo' src='img/logo.svg'></img></a>
+                    <a class='uk-logo' href='/' aria-label='Go to the Homepage'><img class='logo' alt='Factsmission Logo' src='img/logo.svg'></img></a>
                 </div>
                 <ul class='uk-navbar-right uk-navbar-nav'>
                     {{{:render . f:Navigation}}}
@@ -344,7 +344,7 @@
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css' />
         <link rel='stylesheet' href='/style.css' />
     </head>
-    <body>
+    <body lang='en'>
         {{#s:item<-}}
             {{#s:itemListElement<-}}
                 {{{:render . r2h:Default}}}
