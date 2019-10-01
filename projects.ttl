@@ -7,7 +7,7 @@
     s:name "Projects";
     s:headline "Our Open Source Projects";
 
-    s:copyrightYear 2018;
+    s:copyrightYear 2019;
     s:copyrightHolder "FactsMission";
 
     s:mainContentOfPage [

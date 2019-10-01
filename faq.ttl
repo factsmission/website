@@ -7,7 +7,7 @@
             s:name "FAQ";
             s:headline "Frequently Asked Questions";
 
-            s:copyrightYear 2018;
+            s:copyrightYear 2019;
             s:copyrightHolder "FactsMission";
 
             s:item [

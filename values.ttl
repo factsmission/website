@@ -6,7 +6,7 @@
             s:name "Our Values";
             s:headline "Our Values";
 
-            s:copyrightYear 2018;
+            s:copyrightYear 2019;
             s:copyrightHolder "FactsMission";
             
             s:mainContentOfPage [
