@@ -38,7 +38,7 @@
         
             s:item [
                 a s:Question;
-                s:text "What’s the difference between Linked Data and traditional Web Sites?";
+                s:text "What is the difference between Linked Data and traditional Web Sites?";
                 s:acceptedAnswer [
                     a s:Answer;
                     s:text "The traditional Web is document oriented. Only documents can be interlinked using traditional Web technologies. Linked Data allows the exposure of individual pieces of information, which can then be interlinked. For example, a weather forecast site on the traditional web only contains human-readable text and information about how it should be displayed. With linked data it could also contain the machine-readable information that a specified value is the expected temperature, at a specified date, in specified place. The site might link to a geographic authority to allow users and applications to access more information about the place. By having machine readable data, applications can do more for us. For example, combining data from a weather site and a transport site, an application could give us a list of places that are sunny tomorrow and that we can reach by train in less than an hour.";
