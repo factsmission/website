@@ -1,1 +1,4 @@
-https://factsmission.com/
+{
+  "master": "https://factsmission.com/",
+  "staging": "https://staging.factsmission.com/"
+}
