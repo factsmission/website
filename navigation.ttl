@@ -5,7 +5,7 @@
     a s:ListItem;
     s:item </>;
     s:url </>;
-    s:name "Höme";
+    s:name "Hoome";
     s:position 1;
   ];
   s:itemListElement [
