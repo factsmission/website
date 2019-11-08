@@ -3,43 +3,43 @@
 [ a s:BreadcrumbList;
   s:itemListElement [
     a s:ListItem;
-    s:item <https://factsmission.com/>;
-    s:url <https://factsmission.com/>;
+    s:item </>;
+    s:url </>;
     s:name "Home";
     s:position 1;
   ];
   s:itemListElement [
     a s:ListItem;
-    s:item <https://factsmission.com/essentials>;
-    s:url <https://factsmission.com/essentials>;
+    s:item </essentials>;
+    s:url </essentials>;
     s:name "Essentials";
     s:position 2;
   ];
   s:itemListElement [
     a s:ListItem;
-    s:item <https://factsmission.com/faq>;
-    s:url <https://factsmission.com/faq>;
+    s:item </faq>;
+    s:url </faq>;
     s:name "FAQ";
     s:position 3;
   ];
   s:itemListElement [
     a s:ListItem;
-    s:item <https://factsmission.com/team>;
-    s:url <https://factsmission.com/team>;
+    s:item </team>;
+    s:url </team>;
     s:name "Team";
     s:position 4;
   ];
   s:itemListElement [
     a s:ListItem;
-    s:item <https://factsmission.com/values>;
-    s:url <https://factsmission.com/values>;
+    s:item </values>;
+    s:url </values>;
     s:name "Our Values";
     s:position 5;
   ];
   s:itemListElement [
     a s:ListItem;
-    s:item <https://factsmission.com/projects>;
-    s:url <https://factsmission.com/projects>;
+    s:item </projects>;
+    s:url </projects>;
     s:name "Projects";
     s:position 6;
   ]
