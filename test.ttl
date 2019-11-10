@@ -1,8 +1,0 @@
-@prefix s:<http://schema.org/> .
-@prefix f: <https://schema.factsmission.com/> .
-
-<> 
-    a s:WebPage;
-    
-    s:name "Test";
-    s:headline "Our Open Source Test".
