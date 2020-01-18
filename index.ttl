@@ -6,7 +6,7 @@
 
     s:headline "Services" ;
 
-    s:copyrightYear 2018;
+    s:copyrightYear 2020;
     s:copyrightHolder "FactsMission";
 
     f:hasSideBar true;
