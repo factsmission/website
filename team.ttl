@@ -30,7 +30,7 @@
             s:item [
                 a s:Article;
                 s:headline "Noam Bachmann";
-                s:text "";
+                s:text "Noam is passionate both about design and about coding. He knows the state of the art in web development and applies them to linked data.";
                 s:image <img/noam.jpeg>;
             ];
         .
