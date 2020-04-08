@@ -1,12 +1,12 @@
 @prefix s:<http://schema.org/> .
 
-        <> 
+        <>
             a s:WebPage;
             
             s:name "Team";
             s:headline "Our Team";
 
-            s:copyrightYear 2019;
+            s:copyrightYear 2020;
             s:copyrightHolder "FactsMission";
             
             s:item [
@@ -27,5 +27,10 @@
                 s:text "Alessio is our liaison with our development team at Synapta in Torino. Alessio is the youngest fellow at Nexa Center for Internet & Society and an expert both in Linked Data technologies as well as agile software development.";
                 s:image <img/alessio.jpg>;
             ];
-
+            s:item [
+                a s:Article;
+                s:headline "Noam Bachmann";
+                s:text "";
+                s:image <img/noam.jpeg>;
+            ];
         .
