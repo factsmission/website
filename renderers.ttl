@@ -24,9 +24,9 @@
             info@factsmission.com
         </p>
         <p>
-            &copy; {{s:copyrightYear}} {{s:copyrightHolder}}: All rights reserved.
+            &copy; {{s:copyrightYear}} {{s:copyrightHolder}}
             <br>
-            {{s:copyrightHolder}}, Gartenstrasse 35, 2503 Biel/Bienne, Switzerland
+            All rights reserved
         </p>
     </div>
     """

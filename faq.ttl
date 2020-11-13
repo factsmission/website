@@ -7,8 +7,8 @@
             s:name "FAQ";
             s:headline "Frequently Asked Questions";
 
-            s:copyrightYear 2019;
-            s:copyrightHolder "FactsMission";
+            s:copyrightYear 2020;
+            s:copyrightHolder "FactsMission AG, Gartenstrasse 35, 2503 Biel/Bienne, Switzerland";
 
             s:item [
                 a s:Question;
