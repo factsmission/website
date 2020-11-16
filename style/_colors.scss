@@ -1,0 +1,75 @@
+@import 'util/variables';
+
+.color-primary {
+    color: $color-primary;
+}
+
+.color-light {
+    color: $color-light;
+}
+
+.color-dark {
+    color: $color-dark;
+}
+
+.color-accent {
+    color: $color-accent;
+}
+
+.color-accent-light {
+    color: $color-accent-light;
+}
+
+.color-accent-dark {
+    color: $color-accent-dark;
+}
+
+.background-color-primary {
+    background-color: $color-primary;
+    color: $color-on-primary;
+}
+
+.background-color-light {
+    background-color: $color-light;
+    color: $color-on-light;
+}
+
+.background-color-dark {
+    background-color: $color-dark;
+    color: $color-on-primary;
+}
+
+.background-color-accent {
+    background-color: $color-accent;
+    color: $color-on-accent;
+}
+
+.background-color-accent-light {
+    background-color: $color-accent-light;
+    color: $color-on-accent;
+}
+
+.background-color-accent-dark {
+    background-color: $color-accent-dark;
+    color: $color-on-accent;
+}
+
+.c-red {
+    color: #a11;
+}
+
+.c-dark {
+    color: #555;
+}
+
+.c-blue {
+    color: #219;
+}
+
+.c-violet {
+    color: #708;
+}
+
+.c-green {
+    color: #085;
+}
