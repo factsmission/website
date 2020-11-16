@@ -1,0 +1,87 @@
+@import 'util/variables';
+@import 'util/breakpoints';
+@import 'util/fonts';
+@import 'colors';
+@import 'fonts';
+@import 'layout';
+
+.bc-divider:before {
+    margin-right: 5px;
+    margin-left: 5px;
+    content: '❯';
+}
+
+.twitter-parent .uk-card-header {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.twitter-parent iframe {
+    border: 1px solid #e5e5e5 !important;
+    height: calc(100vh - 78px);
+    position: sticky !important;
+    top: 79px;
+}
+
+section>code,
+section>pre,
+.code {
+    color: #555;
+    padding: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+code,
+.code,
+.CodeMirror {
+    font-family: 'Fira Code', monospace !important;
+    font-size: .75rem;
+}
+
+.CodeMirror {
+    min-height: 37px;
+}
+
+.rand {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 0;
+    margin: 8px 0;
+}
+
+.btn-svg {
+    float: right;
+    border: none;
+    background-color: #ffffff00;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-svg svg {
+    margin: .4em;
+}
+
+.btn-svg:hover path {
+    fill: $color-gray-light !important;
+}
+
+.btn-svg path {
+    fill: $color-gray-dark !important;
+}
+
+.result-bg {
+    padding: 4px;
+    margin: 8px 0 8px 29px;
+    background-color: #fff;
+    border: 1px solid $color-gray-light;
+}
+
+.w-100 {
+    width: 100%;
+    margin: 0;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}

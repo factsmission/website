@@ -6,7 +6,7 @@
             s:name "Team";
             s:headline "Our Team";
 
-            s:copyrightYear 2019;
+            s:copyrightYear 2020;
             s:copyrightHolder "FactsMission";
             
             s:item [

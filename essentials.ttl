@@ -4,7 +4,7 @@
     a s:HowTo;
     s:name "Essentials";
     s:headline "Essentials";
-    s:copyrightYear 2019;
+    s:copyrightYear 2020;
     s:copyrightHolder "FactsMission";
     s:mainContentOfPage [
         a s:Article;
