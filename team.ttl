@@ -29,8 +29,9 @@
             ];
             s:item [
                 a s:Article;
-                s:headline "Peter Hutzli";
-                s:text "Peter was with Swatch Group IT for more than 15 years in different engineering and management roles. At Swatch he initiated and with his team delivered a semantic Enterprise Knowledge Graph integrating more than twenty different data sources and 1 Million nodes.<br/><br/>Prior to Swatch he worked with Fujitsu and Tenor Networks where he implemented network protocols and high-availability. Peter holds a bachelor degree from BFH Biel and a master's degree from Syracuse University, NY. He is inventor of US patent US6628668B1.<br/><br/>Peter is fascinated by the potential that Knowledge Graphs offer to giants like Google and small companies alike. For small organizations Enterprise Knowledge Graphs are an easier and faster way towards artificial intelligence, recommendation systems, digital twins and digitalization of their business model.";
-                s:image <img/peter.png>;
+                s:headline "Noam Bachmann";
+                s:text "";
+                s:text "Noam is passionate both about design and about coding. He knows the state of the art in web development and applies them to linked data.";
+                s:image <img/noam.jpeg>;
             ];
         .
