@@ -17,7 +17,7 @@
             ];
             s:item [
                 a s:Article;
-                s:headline "Thomas Gehrig, COO";
+                s:headline "Thomas Gehrig, Management Consultant";
                 s:text "Thomas Gehrig studied Political Sciences and Journalism and later on specialized in Project Management and Communication. He was a project coordinator for several European research projects in the field of Linked Open Data and teaches management at the School of Design in Bern.";
                 s:image <img/thomas.jpg>;
             ];
