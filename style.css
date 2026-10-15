@@ -46,18 +46,6 @@ a.uk-link-muted {
   color: #999;
 }
 
-.twitter-parent .uk-card-header {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.twitter-parent iframe {
-  border: 1px solid #e5e5e5 !important;
-  height: calc(100vh - 78px);
-  position: sticky !important;
-  top: 79px;
-}
-
 .uk-navbar {
   flex-wrap: wrap;
 }

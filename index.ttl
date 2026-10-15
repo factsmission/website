@@ -9,8 +9,6 @@
     s:copyrightYear 2020;
     s:copyrightHolder "FactsMission AG, Gartenstrasse 35, 2503 Biel/Bienne, Switzerland";
 
-    f:hasSideBar true;
-
     s:mainContentOfPage [
         a s:Article;
         s:articleBody "<p>FactsMission offers consulting and development services to create, process, store, publish and consume linked data. FactsMission helps you provide data in such a way that it can be easily used as the foundation of different applications as well as linked to as an authoritative source. FactsMission helps you grow communities around your data to maximize its impact and increase your organization’s influence.</p><p>For example, while the red list of endangered species has been available online for a long time, linked data now connects the species with related scientific treatments giving access to much more information and allowing more refined queries. One can now search for places where the plant has been spotted or search using older or newer scientific names than the ones used on the list.</p>";
