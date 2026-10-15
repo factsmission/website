@@ -1,6 +1,6 @@
 @prefix s:<http://schema.org/> .
 
-[ a s:BreadcrumbList;
+[ a s:ItemList;
   s:itemListElement [
     a s:ListItem;
     s:item </>;
